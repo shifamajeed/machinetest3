@@ -1,0 +1,220 @@
+<br>
+<br>
+
+<mat-form-field appearance="fill" style="width: 800px;"  >
+    <mat-label>{{weekday | date:'fullDate'}}</mat-label>
+    <mat-select disableRipple name="day" [(ngModel)]="day" >
+      <mat-option value="monday">monday</mat-option>
+      <mat-option value="tuesday">tuesday</mat-option>
+      <mat-option value="wednesday">wednesday</mat-option>
+      <mat-option value="thursday">thursday</mat-option>
+      <mat-option value="friday">friday</mat-option>
+      <mat-option value="saturday">saturday</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+
+
+
+  
+<table style="width: 800PX;"  border="1" cellspacing="0" [ngSwitch]="day" >
+
+
+   <tr >
+    
+    
+    <th >#</th>
+    <th >1</th>
+    <th>2</th>
+    <th >3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>7</th>
+</tr  >
+
+
+
+<tr *ngSwitchCase="'monday'" style="background-color: green;">
+  
+    <td>monday</td>
+    <td>SUB 1</td>
+    <td> SUB 2</td>
+    <td> SUB 3 </td>
+    <td> SUB 4</td>
+    <td> SUB 5</td>
+    <td> SUB 6</td>
+    <td> SUB 7</td>
+</tr>
+
+
+<tr *ngSwitchCase="'tuesday'" style="background-color: green;">
+     
+    <td>tuesday</td>
+    <td>SUB 1</td>
+    <td> SUB 2</td>
+    <td> SUB 3 </td>
+    <td> SUB 4</td>
+    <td> SUB 5</td>
+    <td> SUB 6</td>
+    <td> SUB 7</td>
+</tr>
+
+
+<tr  *ngSwitchCase="'wednesday'" style="background-color: green;">
+    
+    <td>wednesday</td>
+    <td>SUB 1</td>
+    <td> SUB 2</td>
+    <td> SUB 3 </td>
+    <td> SUB 4</td>
+    <td> SUB 5</td>
+    <td> SUB 6</td>
+    <td> SUB 7</td>
+</tr>
+
+
+<tr *ngSwitchCase="'thursday'" style="background-color: green;" >
+     
+    <td>thursday</td>
+    <td>SUB 1</td>
+    <td> SUB 2</td>
+    <td> SUB 3 </td>
+    <td> SUB 4</td>
+    <td> SUB 5</td>
+    <td> SUB 6</td>
+    <td> SUB 7</td>
+</tr>
+
+
+<tr  *ngSwitchCase="'friday'" style="background-color: green;">
+    
+    <td>friday</td>
+    <td>SUB 1</td>
+    <td> SUB 2</td>
+    <td> SUB 3 </td>
+    <td> SUB 4</td>
+    <td> SUB 5</td>
+    <td> SUB 6</td>
+    <td> SUB 7</td>
+</tr>
+
+
+<tr  *ngSwitchCase="'saturday'" style="background-color: green;">
+
+    
+    <td>saturday</td>
+    <td>SUB 1</td>
+    <td> SUB 2</td>
+    <td> SUB 3 </td>
+    <td> SUB 4</td>
+    <td> SUB 5</td>
+    <td> SUB 6</td>
+    <td> SUB 7</td>
+</tr>
+   
+
+
+</table>
+
+<br><br>
+
+<table style="width: 800PX;"  border="1" cellspacing="0"  >
+
+
+    <tr >
+     
+     
+     <th >#</th>
+     <th >1</th>
+     <th>2</th>
+     <th >3</th>
+     <th>4</th>
+     <th>5</th>
+     <th>6</th>
+     <th>7</th>
+ </tr  >
+ 
+ 
+ 
+ <tr >
+   
+     <td>monday</td>
+     <td>SUB 1</td>
+     <td> SUB 2</td>
+     <td> SUB 3 </td>
+     <td> SUB 4</td>
+     <td> SUB 5</td>
+     <td> SUB 6</td>
+     <td> SUB 7</td>
+ </tr>
+ 
+ 
+ <tr >
+      
+     <td>tuesday</td>
+     <td>SUB 1</td>
+     <td> SUB 2</td>
+     <td> SUB 3 </td>
+     <td> SUB 4</td>
+     <td> SUB 5</td>
+     <td> SUB 6</td>
+     <td> SUB 7</td>
+ </tr>
+ 
+ 
+ <tr   >
+     
+     <td>wednesday</td>
+     <td>SUB 1</td>
+     <td> SUB 2</td>
+     <td> SUB 3 </td>
+     <td> SUB 4</td>
+     <td> SUB 5</td>
+     <td> SUB 6</td>
+     <td> SUB 7</td>
+ </tr>
+ 
+ 
+ <tr   >
+      
+     <td>thursday</td>
+     <td>SUB 1</td>
+     <td> SUB 2</td>
+     <td> SUB 3 </td>
+     <td> SUB 4</td>
+     <td> SUB 5</td>
+     <td> SUB 6</td>
+     <td> SUB 7</td>
+ </tr>
+ 
+ 
+ <tr  >
+     
+     <td>friday</td>
+     <td>SUB 1</td>
+     <td> SUB 2</td>
+     <td> SUB 3 </td>
+     <td> SUB 4</td>
+     <td> SUB 5</td>
+     <td> SUB 6</td>
+     <td> SUB 7</td>
+ </tr>
+ 
+ 
+ <tr  >
+ 
+     
+     <td>saturday</td>
+     <td>SUB 1</td>
+     <td> SUB 2</td>
+     <td> SUB 3 </td>
+     <td> SUB 4</td>
+     <td> SUB 5</td>
+     <td> SUB 6</td>
+     <td> SUB 7</td>
+ </tr>
+    
+ 
+ 
+ </table>
